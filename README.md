@@ -1,0 +1,1 @@
+Basic mockup of the NYTimes Crossword Leaderboard.
