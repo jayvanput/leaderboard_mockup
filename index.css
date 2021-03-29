@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 65px;
+    display: block;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    height: 100%;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: inherit;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+nav::after {
+    content: '';
+    width:100%;
+    height: 1px;
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0px;
+}
+
+/* HAMBURGER MENU */
+.nav__hamburger-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 65px;
+    min-width: 65px;
+}
+
+.nav__hamburger-box {
+    width: 20px;
+    height: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav__hamburger-inner{
+    width: 100%;
+    height: 20%;
+    background-color: #000;
+}
+
+/* LEADERBOARD */
+.content {
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.lbd-board {
+    height: 100vh;
+    width: 600px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Leaderboard Header */
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Leaderboard entry */
+.lbd-score {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 12px;
+}
+
+.lbd-score__rank {
+    font-weight: 900;
+    width: 30px;
+    text-align: left;
+}
+
+.lbd-score__name {
+    flex-grow: 1;
+    text-align: left;
+}
