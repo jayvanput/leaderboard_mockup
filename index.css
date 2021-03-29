@@ -125,3 +125,54 @@ h3 {
     flex-grow: 1;
     text-align: left;
 }
+
+/* LEADERBOARD INPUT */
+.input-btn {
+    color: white;
+    background-color: black;
+    height: 44px;
+    border:none;
+    margin: 10px auto;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-btn:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* INPUT FORM */
+.input-popup {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    animation-name: test;
+    animation-duration: 1s;
+}
+
+@keyframes test {
+    from {display: block}
+    to {display: none}
+}
+
+.hide {
+    display: none;
+}
+
+.background {
+    background-color: gray;
+}
+
+#enter-btn {
+    width: 50%;
+}
