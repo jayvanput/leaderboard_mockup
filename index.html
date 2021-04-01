@@ -14,8 +14,8 @@
 
 <body>
     <header>
-        <nav>
-            <div class="nav__hamburger-menu">
+        <nav class="top-nav">
+            <div class="nav__hamburger-menu" id="hamburger-btn">
                 <span class="nav__hamburger-box">
                     <span class="nav__hamburger-inner"></span>
                     <span class="nav__hamburger-inner"></span>
@@ -48,6 +48,17 @@
                 </svg>
             </a>
         </nav>
+        <div id="nav-drawer">
+            <nav>
+                <h4>New York Times Games</h4>
+                <div class="nav-drawer__group">
+                    <a href="https://www.nytimes.com/crosswords/game/daily">test</a>
+                </div>
+                <div class="nav-drawer__group">
+                    <a href="https://www.nytimes.com/crosswords/game/daily">test</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <div class="content">
         <div class="lbd">
@@ -75,30 +86,30 @@
                     <button class="input-btn" id="input-btn">
                         Enter your time
                     </button>
-                    <div class="input-popup hide" id="input-popup">
-                        <form>
-                            <h1>Enter new time</h1>
-
-                            <label for="username">Username</label>
-                            <input type="text" name="username">
-
-                            <label for="hours">Hours</label>
-                            <select name="hours" id="hours"></select>
-                            :
-                            <label for="minutes">Minutes</label>
-                            <select name="minutes" id="minutes"></select>
-                            :
-                            <label for="seconds">Seconds</label>
-                            <select name="seconds" id="seconds"></select>
-
-                            <button type="submit" class="input-btn" id="enter-btn">
-                                Enter
-                            </button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="input-popup hide" id="input-popup">
+        <form>
+            <h1>Enter new time</h1>
+
+            <label for="username">Username</label>
+            <input type="text" name="username">
+
+            <label for="hours">Hours</label>
+            <select name="hours" id="hours"></select>
+            :
+            <label for="minutes">Minutes</label>
+            <select name="minutes" id="minutes"></select>
+            :
+            <label for="seconds">Seconds</label>
+            <select name="seconds" id="seconds"></select>
+
+            <button type="submit" class="input-btn" id="enter-btn">
+                Enter
+            </button>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>

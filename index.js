@@ -30,3 +30,11 @@ input_button.addEventListener('click', () => {
     document.body.classList.toggle('background')
     form.classList.toggle("hide")
 })
+
+// Open side-nav
+let hamburger_btn = document.getElementById("hamburger-btn")
+let nav_drawer = document.getElementById("nav-drawer")
+
+hamburger_btn.addEventListener('click', () => {
+    nav_drawer.classList.toggle('reveal')
+})

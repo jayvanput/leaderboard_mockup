@@ -19,7 +19,7 @@ header {
     top: 0;
 }
 
-nav {
+.top-nav {
     display: flex;
     align-items: center;
     height: inherit;
@@ -35,7 +35,7 @@ a {
     flex-wrap: nowrap;
 }
 
-nav::after {
+.top-nav::after {
     content: '';
     width:100%;
     height: 1px;
@@ -46,6 +46,17 @@ nav::after {
 }
 
 /* HAMBURGER MENU */
+#hamburger-btn {
+    cursor: pointer;
+}
+
+#hamburger-btn:hover {
+    background-color: lightgray;
+}
+#hamburger-btn:active {
+    background-color: gray;
+}
+
 .nav__hamburger-menu {
     display: flex;
     flex-direction: row;
@@ -154,19 +165,8 @@ h3 {
     margin: auto;
     left: 0;
     right: 0;
-    top: 10px;
+    top:100px;
     bottom: 0;
-    animation-name: test;
-    animation-duration: 1s;
-}
-
-@keyframes test {
-    from {display: block}
-    to {display: none}
-}
-
-.hide {
-    display: none;
 }
 
 .background {
@@ -175,4 +175,19 @@ h3 {
 
 #enter-btn {
     width: 50%;
+}
+
+/* NAV DRAWER */
+#nav-drawer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left:-350px;
+    width: 350px;
+    height:100%;
+    border-right: 1px solid lightgray;
+}
+
+#nav-drawer.reveal {
+    left: 0px;
 }
